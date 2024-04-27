@@ -27,9 +27,13 @@ h1{
 h2{
     @include font-52;
     font-weight: 700;
+    color: $heading;
+    span{
+        color: $primary;
+    }
 }
 h3{
-    font-weight: 600;
+    @include font-28;
 }
 p {
     margin: 0;
@@ -116,12 +120,8 @@ input::-webkit-inner-spin-button {
         background: linear-gradient(315deg, #4070FF 25%, #2747A6 78.33%);
     }
 }
-
 .section-title{
-    h2{
-        color: $heading;
-    }
-    span{
-        color: $primary;
+    p{
+        @include font-18;
     }
 }

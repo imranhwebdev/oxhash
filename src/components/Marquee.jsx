@@ -188,6 +188,186 @@ export default function MarqueeOne() {
         {
             image: brandLogo6,
         },
+        {
+            image: brandLogo1,
+        },
+        {
+            image: brandLogo2,
+        },
+        {
+            image: brandLogo3,
+        },
+        {
+            image: brandLogo4,
+        },
+        {
+            image: brandLogo5,
+        },
+        {
+            image: brandLogo6,
+        },
+        {
+            image: brandLogo1,
+        },
+        {
+            image: brandLogo2,
+        },
+        {
+            image: brandLogo3,
+        },
+        {
+            image: brandLogo4,
+        },
+        {
+            image: brandLogo5,
+        },
+        {
+            image: brandLogo6,
+        },
+        {
+            image: brandLogo1,
+        },
+        {
+            image: brandLogo2,
+        },
+        {
+            image: brandLogo3,
+        },
+        {
+            image: brandLogo4,
+        },
+        {
+            image: brandLogo5,
+        },
+        {
+            image: brandLogo6,
+        },
+        {
+            image: brandLogo1,
+        },
+        {
+            image: brandLogo2,
+        },
+        {
+            image: brandLogo3,
+        },
+        {
+            image: brandLogo4,
+        },
+        {
+            image: brandLogo5,
+        },
+        {
+            image: brandLogo6,
+        },
+        {
+            image: brandLogo1,
+        },
+        {
+            image: brandLogo2,
+        },
+        {
+            image: brandLogo3,
+        },
+        {
+            image: brandLogo4,
+        },
+        {
+            image: brandLogo5,
+        },
+        {
+            image: brandLogo6,
+        },
+        {
+            image: brandLogo1,
+        },
+        {
+            image: brandLogo2,
+        },
+        {
+            image: brandLogo3,
+        },
+        {
+            image: brandLogo4,
+        },
+        {
+            image: brandLogo5,
+        },
+        {
+            image: brandLogo6,
+        },
+        {
+            image: brandLogo1,
+        },
+        {
+            image: brandLogo2,
+        },
+        {
+            image: brandLogo3,
+        },
+        {
+            image: brandLogo4,
+        },
+        {
+            image: brandLogo5,
+        },
+        {
+            image: brandLogo6,
+        },
+        {
+            image: brandLogo1,
+        },
+        {
+            image: brandLogo2,
+        },
+        {
+            image: brandLogo3,
+        },
+        {
+            image: brandLogo4,
+        },
+        {
+            image: brandLogo5,
+        },
+        {
+            image: brandLogo6,
+        },
+        {
+            image: brandLogo1,
+        },
+        {
+            image: brandLogo2,
+        },
+        {
+            image: brandLogo3,
+        },
+        {
+            image: brandLogo4,
+        },
+        {
+            image: brandLogo5,
+        },
+        {
+            image: brandLogo6,
+        },
+        {
+            image: brandLogo1,
+        },
+        {
+            image: brandLogo2,
+        },
+        {
+            image: brandLogo3,
+        },
+        {
+            image: brandLogo4,
+        },
+        {
+            image: brandLogo5,
+        },
+        {
+            image: brandLogo6,
+        },
     ];
     return (
         <section className="marquee">

@@ -55,13 +55,13 @@ export default function Header() {
               <Link to="achievement" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Achievement</Link>
               <Link to="roadmap" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Roadmap</Link>
             </ul>
-            <div className="header-btns d-md-none">
+            <div className="header-btns d-lg-none">
               <a href="#" className='boxed-btn transparent'>Explorer (Test)</a>
               <a href="#" className='boxed-btn'>Start Building</a>
             </div>
           </nav>
           <div className="heading-actions d-flex align-items-center flex-wrap">
-            <div className="header-btns d-none d-md-block">
+            <div className="header-btns d-none d-lg-block">
               <a href="#" className='boxed-btn transparent'>Explorer (Test)</a>
               <a href="#" className='boxed-btn'>Start Building</a>
             </div>

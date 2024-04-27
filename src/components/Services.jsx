@@ -1,42 +1,74 @@
 import {React} from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { FaTwitter, FaPaperPlane, FaMediumM  } from "react-icons/fa";
-import bannerImg from '../assets/img/hero.png'
-import herosociallogo1 from '../assets/img/hero-social-logo-1.svg'
+import serviceIcon1 from '../assets/img/services-icons/serviceIcon1.svg'
+import serviceIcon2 from '../assets/img/services-icons/serviceIcon2.svg'
+import serviceIcon3 from '../assets/img/services-icons/serviceIcon3.svg'
+import serviceIcon4 from '../assets/img/services-icons/serviceIcon4.svg'
+import serviceIcon5 from '../assets/img/services-icons/serviceIcon5.svg'
+import serviceIcon6 from '../assets/img/services-icons/serviceIcon6.svg'
+import iconShap from '../assets/img/services-icons/iconShap.png'
+import serviceItemBG from '../assets/img/services-icons/serviceItemBG.png'
 export default function Services(){
+    const servicesContent = [
+        {
+            serviceIcon: serviceIcon1,
+            title: "Low Fees, Scalability",
+            desc: "OxHash offers low fees and high scalability as an EVM-compatible chain, ensuring swift transaction processing..."
+        },
+        {
+            serviceIcon: serviceIcon2,
+            title: "Interoperability",
+            desc: "OxHash consensus-free interoperability takes blockchain interoperability to the next level, ensuring consistency"
+        },
+        {
+            serviceIcon: serviceIcon3,
+            title: "Blockchain Routing",
+            desc: "Our routing system helps future-proof dApps by monitoring the conditions of the underlying chain."
+        },
+        {
+            serviceIcon: serviceIcon4,
+            title: "Smart Contracts",
+            desc: "Our Reactive Smart Contracts have self-paying wallets, which can monitor, move, process, and sync data between blockchains without external payments."
+        },
+        {
+            serviceIcon: serviceIcon5,
+            title: "Unified Development",
+            desc: "Using WASM, we allow developers to create dApps using familiar languages like JavaScript, Python, Rust"
+        },
+        {
+            serviceIcon: serviceIcon6,
+            title: "Gas Fee Abstraction",
+            desc: "Gas Fee Abstraction removes the complexity of paying fees across multiple chains. No need for users to hold L1 or L2 native tokens to use the dApp."
+        },
+    ]
     return(
-        <div className="banner" id='services'>
-            <div className="banner-wrapper">
-                <Container>
-                    <Row className='align-items-center'>
-                        <Col lg={7} className="order-2 order-lg-1">
-                            <div className="banner-content">
-                                <span className='text-primary d-block text-uppercase fw-bold'>This means of course </span>
-                                <h1 className='text-white'>Services</h1>
-                                <p>This means of course that we are setting a few “rules” for Phase 1 of Osaka Protocol (Phase 2 to be revealed shortly) , which emulate the original rules of Shiba Inu.</p>
-                                <div className="btn-with-social">
-                                    <a href="#" className="base-btn">Buy on Uniswap</a>
-                                    <div className="social-links">
-                                        <ul>
-                                            <li><a href="/"><FaTwitter /></a></li>
-                                            <li><a href="/"><FaPaperPlane /></a></li>
-                                            <li><a href="/"><FaMediumM /></a></li>
-                                            <li><a href="/"><img src={herosociallogo1} alt="" /></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col lg={5} className='text-end order-1 order-lg-2'>
-                            <div className="banner-img">
-                                <firure className="banner-right-img">
-                                    <img src={bannerImg} alt="" />
-                                </firure>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+        <div className="services">
+            <Container>
+                <Row className='justify-content-center'>
+                    <Col lg={7}>
+                        <div className="section-title text-center">
+                            <h2>Core <span>Features</span></h2>
+                            <p>At Layer 2b, we pride ourselves on offering a suite of core features designed to elevate your experience in the decentralized landscape.</p>
+                        </div>
+                    </Col>
+                </Row>
+                <Row className='services-wrapper'>
+                    {servicesContent.map((item, index)=>(
+                    <Col lg={4} md={6} className='services-single-item' key={index}>
+                        <div className="single-item text-center">
+                            <img className='serviceItemBG' src={serviceItemBG} alt="" />
+                            <figure className='icon'>
+                                <img className='iconShap' src={iconShap} alt="" />
+                                <img src={item.serviceIcon} alt="" />
+                            </figure>
+                            <h3>{item.title}</h3>
+                            <p>{item.desc}</p>
+                        </div>
+                    </Col>
+
+                    ))}
+                </Row>
+            </Container>
         </div>
     )
 }

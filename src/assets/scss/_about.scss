@@ -1,0 +1,101 @@
+.about{
+    padding-top: 200px;
+    padding-bottom: 90px;
+    @include mmd{
+        padding-top: 150px;
+        padding-bottom: 80px;
+    }
+    @include sm{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .aboutLeft {
+        position: relative;
+        z-index: 1;
+        padding: 70px;
+        max-width: 465px;
+        margin-inline: auto;
+        @include mmd {
+            max-width: 365px;
+            padding: 60px;
+        }
+        .aboutLeftImgShap {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            animation: rotated 15s linear infinite;
+        }
+    }
+    &-content{
+        padding-left: 10%;
+        @include mmd{
+            text-align: center;
+            margin-top: 60px;
+            padding-left: 0;
+        }
+        .subtitle{
+            color: $caption;
+            @include font-18;
+            font-weight: 500;
+            line-height: 150%;
+            letter-spacing: 0.9px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        h2{
+            margin-bottom: 20px;
+        }
+        p{
+            max-width: 480px;
+            @include font-18;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+            strong{
+                font-weight: 500;
+            }
+            margin-bottom: 25px;
+            @include mmd{
+                margin-inline: auto;
+            }
+        }
+        li{
+            color: $heading;
+            font-family: "Rubik", sans-serif;
+            @include font-20;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            opacity: 0.8;
+            margin-bottom: 12px;
+            svg{
+                margin-right: 8px;
+                display: inline-block;
+                max-width: 20px;
+            }
+        }
+        .boxed-btn{
+            margin-top: 20px;
+            margin-right: 15px;
+            padding: 24px 40px;
+            @include font-20;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+    }
+}
+
+
+@keyframes rotated {
+    0% {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
