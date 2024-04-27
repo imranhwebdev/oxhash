@@ -1,0 +1,31 @@
+.banner{
+    padding-top: 230px;
+    padding-bottom: 130px;
+    &-content{
+        .subtitle{
+            img{
+                max-width: 24px;
+            }
+            color: $caption;
+            @include font-20;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        h1{
+            color: $heading;
+            span{
+                color: $primary;
+            }
+            margin-bottom: 25px;
+        }
+        p{
+            @include font-20;
+            margin-bottom: 38px;
+        }
+        .boxed-btn{
+            img{
+                max-width: 16px;
+            }
+        }
+    }
+}
