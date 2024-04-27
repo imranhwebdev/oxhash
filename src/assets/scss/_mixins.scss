@@ -128,19 +128,19 @@
 //     }
 // }
 
-// @mixin font-22 {
-//     font-size: 22px;
-//     line-height: 160%;
-//     @include lg {
-//         font-size: 18px;
-//     }
-//     @include md {
-//         font-size: 18px;
-//     }
-//     @include sm {
-//         font-size: 16px;
-//     }
-// }
+@mixin font-22 {
+    font-size: 22px;
+    line-height: 160%;
+    @include lg {
+        font-size: 18px;
+    }
+    @include md {
+        font-size: 18px;
+    }
+    @include sm {
+        font-size: 16px;
+    }
+}
 
 @mixin font-20 {
     font-size: 22px;

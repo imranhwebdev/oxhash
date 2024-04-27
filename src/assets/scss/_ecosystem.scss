@@ -1,0 +1,103 @@
+.ecosystem{
+    padding-bottom: 100px;
+    .section-title{
+        margin-bottom: 70px;
+        @include mmd{
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .subtitle{
+            text-transform: uppercase;
+            color: $heading;
+            @include font-18;
+            display: inline-block;
+            margin-bottom: 12px;
+            font-weight: 500;
+            line-height: 150%; 
+            letter-spacing: 0.9px;
+        }
+    }
+    .eco-services{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        @include ssm{   
+            gap: 30px;
+        }
+        .eco-service-item{
+            width: calc(50% - 30px);
+            flex: 0 0 auto;
+            position: relative;
+            z-index: 1;
+            padding-left: 22px;
+            &::before{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 2px;
+                background-color: #32394E;
+                @include ssm{
+                    width: 100%;
+                    height: 2px;
+                    top: auto;
+                    bottom: 0;
+                }
+            }
+            @include ssm{
+                width: 100%;
+                text-align: center;
+                padding-left: 0;
+                padding-bottom: 30px;
+            }
+            span{
+                color: $heading;
+                font-family: "Rubik", sans-serif;
+                @include font-52;
+                font-weight: 500;
+                line-height: 125%;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+            h3{
+                color: $heading;
+                @include font-22;
+                font-weight: 500;
+                line-height: 140%;
+            }
+        }
+    }
+    .eco-right{
+        position: relative;
+        z-index: 1;
+        margin-right: -60px;
+        margin-left: 60px;
+        @include xl{
+            margin-right: 0;
+            margin-left: 0;
+        }
+        @include lg{
+            margin-right: 0;
+            margin-left: 0;
+        }
+        @include mmd{
+            margin-right: 0;
+            margin-left: 0;
+            margin-top: 100px;
+            text-align: center;
+        }
+        .ecoImg{
+            max-width: 540px;
+            @include sm{
+                max-width: 400px;
+            }
+            @include ssm{
+                max-width: 95%
+            }
+        }
+        .ecoshap{
+            @include postion_shap_middle;
+        }
+    }
+}

@@ -1,9 +1,30 @@
 .services{
     padding-top: 90px;
     padding-bottom: 90px;
+    position: relative;
+    z-index: 1;
+    @include mmd{
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    &::before{
+        @include potion_left;
+        content: "";
+        border-radius: 305px;
+        width: 305px;
+        height: 210px;
+        background: #37BCE6;
+        filter: blur(257px);
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
     .section-title{
         margin-bottom: 155px;
         display: inline-block;
+        @include mmd{
+            margin-bottom: 100px;
+        }
         p{
             max-width: 650px;
             margin-inline: auto;
@@ -19,6 +40,10 @@
     &-wrapper{
         .services-single-item{
             margin-bottom: 95px;
+            @include mmd{
+                margin-bottom: 70px;
+                margin-top: 30px;
+            }
         }
         .single-item{
             position: relative;
