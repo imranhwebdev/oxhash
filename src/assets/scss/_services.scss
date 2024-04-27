@@ -7,6 +7,13 @@
         p{
             max-width: 650px;
             margin-inline: auto;
+            @include mmd{
+                max-width: 100%;
+                padding:0 20%;
+            }
+            @include sm{
+                padding:0 5%;
+            }
         }
     }
     &-wrapper{
@@ -25,6 +32,12 @@
             .serviceItemBG{
                 @include postion_shap_middle;
             }
+            @include sm{
+                margin-inline: 10%;
+            }
+            @include ssm{
+                margin-inline: 0%;
+            }
             .icon{
                 position: absolute;
                 z-index: 1;
@@ -37,12 +50,20 @@
                 top: -65px;
                 transition: all .5s ease-in-out;
                 margin-left: -65px;
+                @include sm{
+                    width: 100px;
+                    height: 100px;
+                    top: -45px
+                }
                 .iconShap{
                     @include postion_shap_middle;
                 }
                 img{
                     max-width: 70px;
                     width: auto;
+                    @include sm{
+                        max-width: 50px;
+                    }
                 }
             }
             h3{
