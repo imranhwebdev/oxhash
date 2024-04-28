@@ -67,7 +67,7 @@ export default function Roadmap() {
                     <Swiper
                         initialSlide={initialSlide}
                         centeredSlides={true}
-                        slidesPerView={4}
+                        slidesPerView={3}
                         spaceBetween={0}
                         pagination={{
                             clickable: true,
@@ -92,7 +92,7 @@ export default function Roadmap() {
                             slidesPerView: 3,
                             },
                             '@1.50': {
-                            slidesPerView: 4,
+                            slidesPerView: 3,
                             },
                         }}
                     >
