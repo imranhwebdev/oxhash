@@ -48,7 +48,7 @@ export default function About(){
                             </ul>
                             <div className="buttons">
                                 <a href="#" className='boxed-btn'>Build on OxHash</a>
-                                <a href="#" className='boxed-btn transparent'>Build on OxHash</a>
+                                <a href="#" className='boxed-btn transparent'>Apply for OxHash Grant</a>
                             </div>
                         </div>
                     </Col>

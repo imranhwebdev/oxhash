@@ -20,10 +20,10 @@
         z-index: -1;
     }
     .section-title{
-        margin-bottom: 155px;
+        margin-bottom: 50px;
         display: inline-block;
         @include mmd{
-            margin-bottom: 100px;
+            margin-bottom: 30px;
         }
         p{
             max-width: 650px;
@@ -39,10 +39,9 @@
     }
     &-wrapper{
         .services-single-item{
-            margin-bottom: 95px;
+            margin-top: 95px;
             @include mmd{
-                margin-bottom: 70px;
-                margin-top: 30px;
+                margin-top: 70px;
             }
         }
         .single-item{
@@ -106,5 +105,9 @@
                 transform: scaleX(-1);
             }
         }
+    }
+
+    .boxed-btn{
+        margin-top: 60px;
     }
 }

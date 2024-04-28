@@ -1,5 +1,9 @@
 .ecosystem{
+    padding-top: 90px;
     padding-bottom: 100px;
+    @include mmd{
+        padding-top: 50px;
+    }
     .section-title{
         margin-bottom: 70px;
         @include mmd{
