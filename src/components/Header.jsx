@@ -50,7 +50,7 @@ export default function Header() {
             </div>
             <ul className="main_menu d-lg-flex align-items-center">
               <Link href="howitwork" onClick={scrollToTop} className='heading-link text-capitalize' spy={true} smooth={true} offset={-320} duration={150} >How it work</Link>
-              <Link to="feature" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Feature</Link>
+              <Link to="services" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Feature</Link>
               <Link to="partners" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={50} >Partners</Link>
               <Link to="achievement" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Achievement</Link>
               <Link to="roadmap" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Roadmap</Link>

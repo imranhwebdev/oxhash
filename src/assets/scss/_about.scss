@@ -19,6 +19,16 @@
             max-width: 365px;
             padding: 60px;
         }
+         .ecoshap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 150%;
+            max-width: 150%;
+            height: 150%;
+            transform: translate(-50%, -50%);
+            z-index: -2;
+        }
         .aboutLeftImgShap {
             position: absolute;
             left: 50%;
@@ -32,6 +42,8 @@
     }
     &-content{
         padding-left: 10%;
+        position: relative;
+        z-index: 9;
         @include mmd{
             text-align: center;
             margin-top: 60px;

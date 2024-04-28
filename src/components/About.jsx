@@ -2,6 +2,7 @@ import {React} from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import aboutLeftImg from '../assets/img/aboutLeftImg.png';
 import aboutLeftImgShap from '../assets/img/aboutLeftImgShap.png';
+import ecosystemImgLargeShap from "../assets/img/ecosystemImgLargeShap.png";
 export default function About(){
     const aboutLists = [
         {
@@ -30,6 +31,7 @@ export default function About(){
                 <Row className='align-items-center'>
                     <Col lg={5}>
                         <div className="aboutLeft">
+                            <img className='ecoshap' src={ecosystemImgLargeShap} alt="" />
                             <img className='aboutLeftImgShap' src={aboutLeftImgShap} alt="" />
                             <img src={aboutLeftImg} alt="" />
                         </div>

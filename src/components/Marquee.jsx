@@ -6,6 +6,7 @@ import brandLogo4 from '../assets/img/brand-logo/brandLogo4.png';
 import brandLogo5 from '../assets/img/brand-logo/brandLogo5.png';
 import brandLogo6 from '../assets/img/brand-logo/brandLogo6.png';
 import Marquee from "react-fast-marquee";
+import { Container, Row, Col } from 'react-bootstrap';
 export default function MarqueeOne() {
     const marqueeImgs = [
         {
@@ -371,13 +372,19 @@ export default function MarqueeOne() {
     ];
     return (
         <section className="marquee">
-            <Marquee direction="left" speed={100} loop={50}>
-                {marqueeImgs.map((marqueeImg, index) => (
-                    <figure key={index}>
-                        <img src={marqueeImg.image} alt="" />
-                    </figure>
-                ))}
-            </Marquee>
+            <Container>
+                <Row>
+                    <Col>
+                        <Marquee direction="left" speed={100} loop={50}>
+                            {marqueeImgs.map((marqueeImg, index) => (
+                                <figure key={index}>
+                                    <img src={marqueeImg.image} alt="" />
+                                </figure>
+                            ))}
+                        </Marquee>
+                    </Col>
+                </Row>
+            </Container>
         </section>
     )
 }

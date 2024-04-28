@@ -1,10 +1,18 @@
 import {React} from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import heroShap from '../assets/img/heroShap.png'
 import subtitleImg from '../assets/img/subtitleImg.png'
 import btnLogo from '../assets/img/btnLogo.svg'
+import Header from './Header';
 export default function Banner(){
     return(
         <div className="banner">
+            <figure className='heroShap'>
+                <img src={heroShap} alt="" />
+            </figure>
+            <div className="heroBlurColorShap1"></div>
+            <div className="heroBlurColorShap2"></div>
+            <div className="heroBlurColorShap3"></div>
             <Container>
                 <Row className='justify-content-center'>
                     <Col lg={8} md={10}>

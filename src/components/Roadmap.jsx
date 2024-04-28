@@ -1,14 +1,11 @@
 import React, { useRef, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap'
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import required modules
-import { Pagination } from 'swiper/modules';
-
-// Import Swiper styles
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 export default function Roadmap() {
+
     const roadmapItems = [
         {
             count: "PHASE 01",
@@ -50,7 +47,10 @@ export default function Roadmap() {
             title: "Launch Testnet",
             desc: "Mint will be open to all developers deploying smart contracts",
         },
-    ]
+    ];
+
+    const initialSlide = 1;
+    
   return (
     <div className='roadmap'>
         <Container>
@@ -65,14 +65,36 @@ export default function Roadmap() {
             <Row>
                 <Col>
                     <Swiper
-                        slidesPerView={4}
+                        initialSlide={initialSlide}
+                        centeredSlides={true}
+                        slidesPerView={3}
                         spaceBetween={0}
                         pagination={{
-                        clickable: true,
+                            clickable: true,
                         }}
                         loop={true}
-                        modules={[Pagination]}
+                        navigation={true}
+                        modules={[Navigation]}
                         className="mySwiper"
+                        data-swiper-autoplay="70000"
+                        autoplay={{
+                            delay: 20000,
+                            disableOnInteraction: false,
+                          }}
+                        breakpoints={{
+                            '@0.00': {
+                            slidesPerView: 1,
+                            },
+                            '@0.75': {
+                            slidesPerView: 2,
+                            },
+                            '@1.00': {
+                            slidesPerView: 3,
+                            },
+                            '@1.50': {
+                            slidesPerView: 3,
+                            },
+                        }}
                     >
                         {roadmapItems.map((item, index)=>(
                             <SwiperSlide key={index}  className="roadmap-sinlge-item">

@@ -1,11 +1,55 @@
 .roadmap{
+    padding-top: 80px;
+    padding-bottom: 140px;
+    position: relative;
+    z-index: 1;
+    @include mmd{
+        padding-top: 0;
+        padding-bottom: 100px;
+    }
+    @include sm{
+        padding-bottom: 70px;
+    }
+    &:before{
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: 0;
+        width: 305px;
+        height: 210px;
+        border-radius: 305px;
+        background: #37BCE6;
+        filter: blur(257px);
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+    .section-title{
+        @include sm{
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        p{
+            max-width: 415px;
+            @include sm{
+                margin-inline: auto;
+            }
+        }
+    }
     .roadmap-sinlge-item{
         padding: 30px 17px 30px 40px;
         border-radius: 30px;
         border: 1px solid #394770;
         background: rgba(255, 255, 255, 0.03);
         backdrop-filter: blur(2.5px);
-        height: 100%;
+        height: 300px;
+        margin-top: 100px;
+        @include mmd{
+            padding-left: 30px;
+        }
+        @include sm{
+            margin-top: 0;
+            height: 280px;
+        }
         h5{
             margin-bottom: 65px;
             color:$caption;
@@ -15,6 +59,12 @@
             line-height: 150%;
             letter-spacing: 0.9px;
             text-transform: uppercase;
+            @include mmd{
+                margin-bottom: 30px;
+            }
+            @include sm{
+                margin-bottom: 15px;
+            }
         }
         h4{
             color: $heading;
@@ -39,7 +89,56 @@
         }
     }
 }
+.swiper-button-prev:after {
+    content: url('/src/assets/img/arrowLeft.png');
+}
+.swiper-button-next:after {
+    content: url('/src/assets/img/arrowRight.png');
+}
 
 .swiper-wrapper{
-    height: 307px;
+    height: 400px;
+    @include sm{
+        height: 380px;
+    }
+}
+
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    left: calc(50% - 50px);
+    bottom: 10px;
+    top: auto;
+    @include transition;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    opacity: .5;
+}
+.swiper-button-next{
+    right:  calc(50% - 50px);
+    left: auto;
+}
+.swiper-slide.swiper-slide-active.roadmap-sinlge-item {
+    margin-top: 0px;
+}
+.swiper-slide-active{
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    @include sm{
+        margin-bottom: 0;
+    }
+}
+.swiper-slide-active::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/activeSliderShap.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    transform: translate(-50%, -50%);
 }
