@@ -1,0 +1,45 @@
+.roadmap{
+    .roadmap-sinlge-item{
+        padding: 30px 17px 30px 40px;
+        border-radius: 30px;
+        border: 1px solid #394770;
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(2.5px);
+        height: 100%;
+        h5{
+            margin-bottom: 65px;
+            color:$caption;
+           @include font-18;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            letter-spacing: 0.9px;
+            text-transform: uppercase;
+        }
+        h4{
+            color: $heading;
+            font-weight: 600;
+            line-height: 140%;
+            margin-bottom: 15px;
+        }
+        p{
+            position: relative;
+            z-index: 1;
+            padding-left: 18px;
+            &::before{
+                position: absolute;
+                content: "";
+                left: 0;
+                top:7px;
+                width: 10px;
+                height: 10px;
+                background-color: $caption;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.swiper-wrapper{
+    height: 307px;
+}
